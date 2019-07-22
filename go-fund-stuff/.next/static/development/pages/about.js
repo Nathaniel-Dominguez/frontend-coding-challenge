@@ -10081,7 +10081,7 @@ function About() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!*****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fnathanieldominguez%2FProjects%2Ffrontend-coding-challenge%2Fgo-fund-stuff%2Fpages%2Fabout.js ***!
   \*****************************************************************************************************************************************************************************/
@@ -10104,5 +10104,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map
