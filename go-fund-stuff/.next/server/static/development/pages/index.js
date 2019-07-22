@@ -1274,7 +1274,8 @@ var PostLink = function PostLink(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/post?title=".concat(props.title),
+    href: "/p/[id]",
+    as: "/p/".concat(props.id),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -1286,7 +1287,7 @@ var PostLink = function PostLink(props) {
       lineNumber: 7
     },
     __self: this
-  }, props.title)));
+  }, props.id)));
 };
 
 function Cards() {
@@ -1309,21 +1310,21 @@ function Cards() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
-    title: "Hello Next.js",
+    id: "hello-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
-    title: "Learn Next.js is awesome",
+    id: "learn-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PostLink, {
-    title: "Deploy apps with Zeit",
+    id: "deploy-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
