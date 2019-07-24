@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -274,17 +274,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js ***!
@@ -334,58 +323,6 @@ function _assertThisInitialized(self) {
   }
 
   return self;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
-  \*****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _asyncToGenerator; });
-/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-  try {
-    var info = gen[key](arg);
-    var value = info.value;
-  } catch (error) {
-    reject(error);
-    return;
-  }
-
-  if (info.done) {
-    resolve(value);
-  } else {
-    _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.resolve(value).then(_next, _throw);
-  }
-}
-
-function _asyncToGenerator(fn) {
-  return function () {
-    var self = this,
-        args = arguments;
-    return new _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
-      var gen = fn.apply(self, args);
-
-      function _next(value) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-      }
-
-      function _throw(err) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-      }
-
-      _next(undefined);
-    });
-  };
 }
 
 /***/ }),
@@ -714,18 +651,6 @@ function _interopRequireWildcard(obj) {
 }
 
 module.exports = _interopRequireWildcard;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/regenerator/index.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/regenerator/index.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ "regenerator-runtime");
-
 
 /***/ }),
 
@@ -1330,95 +1255,84 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
-
-
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-markdown */ "react-markdown");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/MyLayout.js */ "./components/MyLayout.js");
 var _jsxFileName = "/Users/nathanieldominguez/Projects/frontend-coding-challenge/go-fund-stuff/pages/p/[id].js";
 
 
 
 
-var Post = function Post(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, props.show.name), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, props.show.summary.replace(/<[/]?p/g, '')), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: props.show.image.medium,
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["useRouter"])();
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    className: "jsx-1805735624",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, router.query.id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-1805735624" + " " + 'markdown',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    source: "\n\t\t\t\t\tThis is our campaign post.\n\t\t\t\t\tYes. We can have a [link](/link).\n\t\t\t\t\tAnd we can have a title as well.\n\n\t\t\t\t\t### This is a title\n\n\t\t\t\t\tAnd here's the content.\n\t\t\t\t\t",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1805735624",
+    __self: this
+  }, ".markdown{font-family:'Arial';}.markdown a{-webkit-text-decoration:none;text-decoration:none;color:blue;}.markdown a:hover{opacity:0.6;}.markdown h3{margin:0;padding:0;text-transform:uppercase;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYXRoYW5pZWxkb21pbmd1ZXovUHJvamVjdHMvZnJvbnRlbmQtY29kaW5nLWNoYWxsZW5nZS9nby1mdW5kLXN0dWZmL3BhZ2VzL3AvW2lkXS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQnNCLEFBRzBCLEFBSUMsQUFLVCxBQUlILFNBQ0MsR0FKWCxPQUswQixDQWQxQix3QkFlQSxNQVhZLFdBQ1oiLCJmaWxlIjoiL1VzZXJzL25hdGhhbmllbGRvbWluZ3Vlei9Qcm9qZWN0cy9mcm9udGVuZC1jb2RpbmctY2hhbGxlbmdlL2dvLWZ1bmQtc3R1ZmYvcGFnZXMvcC9baWRdLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9yb3V0ZXInO1xuaW1wb3J0IE1hcmtkb3duIGZyb20gJ3JlYWN0LW1hcmtkb3duJztcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9NeUxheW91dC5qcyc7XG5cbmV4cG9ydCBkZWZhdWx0ICgpID0+IHtcblx0Y29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7XG5cdHJldHVybiAoXG5cdFx0PExheW91dD5cblx0XHRcdDxoMT57cm91dGVyLnF1ZXJ5LmlkfTwvaDE+XG5cdFx0XHQ8ZGl2IGNsYXNzTmFtZT0nbWFya2Rvd24nPlxuXHRcdFx0XHQ8TWFya2Rvd24gc291cmNlPXtgXG5cdFx0XHRcdFx0VGhpcyBpcyBvdXIgY2FtcGFpZ24gcG9zdC5cblx0XHRcdFx0XHRZZXMuIFdlIGNhbiBoYXZlIGEgW2xpbmtdKC9saW5rKS5cblx0XHRcdFx0XHRBbmQgd2UgY2FuIGhhdmUgYSB0aXRsZSBhcyB3ZWxsLlxuXG5cdFx0XHRcdFx0IyMjIFRoaXMgaXMgYSB0aXRsZVxuXG5cdFx0XHRcdFx0QW5kIGhlcmUncyB0aGUgY29udGVudC5cblx0XHRcdFx0XHRgfVxuXHRcdFx0XHQvPlxuXHRcdFx0PC9kaXY+XG5cdFx0XHQ8c3R5bGUganN4IGdsb2JhbD57YFxuXHRcdFx0XHQubWFya2Rvd24ge1xuXHRcdFx0XHRcdGZvbnQtZmFtaWx5OiAnQXJpYWwnO1xuXHRcdFx0XHR9XG5cblx0XHRcdFx0Lm1hcmtkb3duIGEge1xuXHRcdFx0XHRcdHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblx0XHRcdFx0XHRjb2xvcjogYmx1ZTtcblx0XHRcdFx0fVxuXG5cdFx0XHRcdC5tYXJrZG93biBhOmhvdmVyIHtcblx0XHRcdFx0XHRvcGFjaXR5OiAwLjY7XG5cdFx0XHRcdH1cblxuXHRcdFx0XHQubWFya2Rvd24gaDMge1xuXHRcdFx0XHRcdG1hcmdpbjogMDtcblx0XHRcdFx0XHRwYWRkaW5nOiAwO1xuXHRcdFx0XHRcdHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG5cdFx0XHRcdH1cblx0XHRcdGB9PC9zdHlsZT5cblx0XHQ8L0xheW91dD5cblx0KTtcbn07XG5cbi8qXG5ob3cgdG8gbG9hZCBkYXRhIGZyb20gYW4gYXBpIGZvciBkeW5hbWljIHBhZ2VzIG9mIGluZm8gXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvTXlMYXlvdXQuanMnO1xuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XG5cbmNvbnN0IFBvc3QgPSBwcm9wcyA9PiAoXG5cdDxMYXlvdXQ+XG5cdFx0PGgxPntwcm9wcy5zaG93Lm5hbWV9PC9oMT5cblx0XHQ8cD57cHJvcHMuc2hvdy5zdW1tYXJ5LnJlcGxhY2UoLzxbL10/cC9nLCAnJyl9PC9wPlxuXHRcdDxpbWcgc3JjPXtwcm9wcy5zaG93LmltYWdlLm1lZGl1bX0gLz5cblx0PC9MYXlvdXQ+XHRcbik7XG5cblBvc3QuZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgZnVuY3Rpb24oY29udGV4dCkge1xuXHRjb25zdCB7IGlkIH0gPSBjb250ZXh0LnF1ZXJ5O1xuXHRjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly9hcGkudHZtYXplLmNvbS9zaG93cy8ke2lkfWApO1xuXHRjb25zdCBzaG93ID0gYXdhaXQgcmVzLmpzb24oKTtcblxuXHRjb25zb2xlLmxvZyhgRmV0Y2hlZCBzaG93OiAke3Nob3cubmFtZX1gKTtcblxuXHRyZXR1cm4geyBzaG93IH07XG59O1xuXG5leHBvcnQgZGVmYXVsdCBQb3N0O1xuKi8iXX0= */\n/*@ sourceURL=/Users/nathanieldominguez/Projects/frontend-coding-challenge/go-fund-stuff/pages/p/[id].js */"));
+});
+/*
+how to load data from an api for dynamic pages of info 
+import Layout from '../../components/MyLayout.js';
+import fetch from 'isomorphic-unfetch';
+
+const Post = props => (
+	<Layout>
+		<h1>{props.show.name}</h1>
+		<p>{props.show.summary.replace(/<[/]?p/g, '')}</p>
+		<img src={props.show.image.medium} />
+	</Layout>	
+);
+
+Post.getInitialProps = async function(context) {
+	const { id } = context.query;
+	const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
+	const show = await res.json();
+
+	console.log(`Fetched show: ${show.name}`);
+
+	return { show };
 };
 
-Post.getInitialProps =
-/*#__PURE__*/
-function () {
-  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
-    var id, res, show;
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            id = context.query.id;
-            _context.next = 3;
-            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()("https://api.tvmaze.com/shows/".concat(id));
-
-          case 3:
-            res = _context.sent;
-            _context.next = 6;
-            return res.json();
-
-          case 6:
-            show = _context.sent;
-            console.log("Fetched show: ".concat(show.name));
-            return _context.abrupt("return", {
-              show: show
-            });
-
-          case 9:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-
-  return function (_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (Post);
+export default Post;
+*/
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/p/[id].js ***!
   \*******************************/
@@ -1507,17 +1421,6 @@ module.exports = require("core-js/library/fn/object/set-prototype-of");
 
 /***/ }),
 
-/***/ "core-js/library/fn/promise":
-/*!*********************************************!*\
-  !*** external "core-js/library/fn/promise" ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/promise");
-
-/***/ }),
-
 /***/ "core-js/library/fn/reflect/construct":
 /*!*******************************************************!*\
   !*** external "core-js/library/fn/reflect/construct" ***!
@@ -1548,17 +1451,6 @@ module.exports = require("core-js/library/fn/symbol");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/symbol/iterator");
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
@@ -1617,6 +1509,17 @@ module.exports = require("next-server/dist/lib/utils");
 
 /***/ }),
 
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -1650,14 +1553,25 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "regenerator-runtime":
-/*!**************************************!*\
-  !*** external "regenerator-runtime" ***!
-  \**************************************/
+/***/ "react-markdown":
+/*!*********************************!*\
+  !*** external "react-markdown" ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("regenerator-runtime");
+module.exports = require("react-markdown");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ }),
 
