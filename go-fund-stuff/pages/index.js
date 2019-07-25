@@ -1,6 +1,6 @@
 import Layout from '../components/MyLayout.js';
 import Link from 'next/link';
-import '../index.css'
+import '../style.css'
 
 function getPosts() {
 	return [
@@ -38,6 +38,7 @@ export default function Cards() {
 	return (
 		<Layout>
 			<h1>Campaign Cards</h1>
+			<h2>Environment variable process.env.TEST is '{process.env.TEST}'</h2>
 			<ul>
 				{getPosts().map(post => (
 					<PostLink key={post.id} post={post} />
